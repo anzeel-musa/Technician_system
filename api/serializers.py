@@ -9,7 +9,7 @@ class TechncianSerializers(serializers.ModelSerializer):
 class CustomerSerializers(serializers.ModelSerializer):
     class Meta:
         model=Customer
-        fields=['id',' profile_pic','first_name','last_name','address','mobile','status']
+        fields=['id','image','first_name','last_name','address','mobile','status']
         
 class AppointmentSerializers(serializers.ModelSerializer):
     class Meta:

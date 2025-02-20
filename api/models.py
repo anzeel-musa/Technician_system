@@ -35,8 +35,8 @@ class Technician(models.Model):
 
 
 class Customer(models.Model):
-    user=models.OneToOneField(User,on_delete=models.CASCADE)
-    profile_pic= models.ImageField(upload_to='profile_pic/PatientProfilePic/',null=True,blank=True)
+    user=models.OneToOneField(User,on_delete=models.CASCADE, null=True, blank=True)
+    image= models.ImageField(upload_to='profile_pic/PatientProfilePic/',null=True,blank=True)
     first_name= models.CharField(max_length=100)
     last_name=models.CharField(max_length=100)
     address = models.CharField(max_length=40)
